@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Algorithm Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="controls">
+            <label for="algorithmSelect">Select Algorithm:</label>
+            <select id="algorithmSelect">
+                <option value="bubble">Bubble Sort</option>
+                <option value="insertion">Insertion Sort</option>
+                <option value="merge">Merge Sort</option>
+                <option value="quick">Quick Sort</option>
+            </select>
+            <label for="arraySize">Array Size:</label>
+            <input type="number" id="arraySize" min="5" max="50" value="15">
+            <label for="minValue">Min Value:</label>
+            <input type="number" id="minValue" min="1" max="50" value="1">
+            <label for="maxValue">Max Value:</label>
+            <input type="number" id="maxValue" min="1" max="100" value="50">
+            <button onclick="generateRandomArray()">Generate Array</button>
+            <button onclick="startSorting()">Start Sorting</button>
+        </div>
+        <div class="array-container" id="arrayContainer">
+            <!-- Array elements will be added dynamically here -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
